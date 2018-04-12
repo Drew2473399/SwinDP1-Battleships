@@ -1,0 +1,411 @@
+Microsoft (R) Visual Basic Compiler version 14.7.2556
+for Visual Basic 2012
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to Visual Basic 2012, which is no longer the latest version. For compilers that support newer versions of the Visual Basic programming language, see http://go.microsoft.com/fwlink/?LinkID=533241
+
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(17) : error BC30562: 'AddNewState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            AddNewState(GameState.ViewingGameMenu)
+            ~~~~~~~~~~~                           
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(35) : error BC30562: 'FIELD_TOP' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        row = Convert.ToInt32(Math.Floor((mouse.Y - FIELD_TOP) / (CELL_HEIGHT + CELL_GAP)))
+                                                    ~~~~~~~~~                              
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(35) : error BC30562: 'CELL_HEIGHT' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        row = Convert.ToInt32(Math.Floor((mouse.Y - FIELD_TOP) / (CELL_HEIGHT + CELL_GAP)))
+                                                                  ~~~~~~~~~~~              
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(35) : error BC30562: 'CELL_GAP' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        row = Convert.ToInt32(Math.Floor((mouse.Y - FIELD_TOP) / (CELL_HEIGHT + CELL_GAP)))
+                                                                                ~~~~~~~~   
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(36) : error BC30562: 'FIELD_LEFT' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        col = Convert.ToInt32(Math.Floor((mouse.X - FIELD_LEFT) / (CELL_WIDTH + CELL_GAP)))
+                                                    ~~~~~~~~~~                             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(36) : error BC30562: 'CELL_WIDTH' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        col = Convert.ToInt32(Math.Floor((mouse.X - FIELD_LEFT) / (CELL_WIDTH + CELL_GAP)))
+                                                                   ~~~~~~~~~~              
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(36) : error BC30562: 'CELL_GAP' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        col = Convert.ToInt32(Math.Floor((mouse.X - FIELD_LEFT) / (CELL_WIDTH + CELL_GAP)))
+                                                                                ~~~~~~~~   
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(38) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        If row >= 0 And row < HumanPlayer.EnemyGrid.Height Then
+                              ~~~~~~~~~~~                      
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(39) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            If col >= 0 And col < HumanPlayer.EnemyGrid.Width Then
+                                  ~~~~~~~~~~~                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(40) : error BC30562: 'Attack' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                Attack(row, col)
+                ~~~~~~          
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(55) : error BC30562: 'DrawField' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+            DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, True)
+            ~~~~~~~~~                                             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(55) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, True)
+                      ~~~~~~~~~~~                                 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(55) : error BC30562: 'ComputerPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, True)
+                                             ~~~~~~~~~~~~~~       
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(57) : error BC30562: 'DrawField' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+            DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, False)
+            ~~~~~~~~~                                              
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(57) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, False)
+                      ~~~~~~~~~~~                                  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(57) : error BC30562: 'ComputerPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            DrawField(HumanPlayer.EnemyGrid, ComputerPlayer, False)
+                                             ~~~~~~~~~~~~~~        
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(60) : error BC30562: 'DrawSmallField' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer)
+        ~~~~~~~~~~~~~~                                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(60) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer)
+                       ~~~~~~~~~~~                         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\DiscoveryController.vb(60) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer)
+                                               ~~~~~~~~~~~ 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(18) : error BC30562: 'DrawField' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, True)
+        ~~~~~~~~~                                                 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(18) : error BC30562: 'ComputerPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, True)
+                  ~~~~~~~~~~~~~~                                  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(18) : error BC30562: 'ComputerPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, True)
+                                             ~~~~~~~~~~~~~~       
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(19) : error BC30562: 'DrawSmallField' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer)
+        ~~~~~~~~~~~~~~                                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(19) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer)
+                       ~~~~~~~~~~~                         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(19) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer)
+                                               ~~~~~~~~~~~ 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(26) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        If HumanPlayer.IsDestroyed Then
+           ~~~~~~~~~~~                 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(45) : error BC30562: 'ReadHighScore' is ambiguous between declarations in Modules 'HighScoreController' and 'HighScoreController'.
+
+            ReadHighScore(HumanPlayer.Score)
+            ~~~~~~~~~~~~~                   
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(45) : error BC30562: 'HumanPlayer' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            ReadHighScore(HumanPlayer.Score)
+                          ~~~~~~~~~~~       
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\EndingGameController.vb(46) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            EndCurrentState()
+            ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(114) : error BC30562: 'AddExplosion' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+            AddExplosion(row, column)
+            ~~~~~~~~~~~~             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(117) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        Audio.PlaySoundEffect(GameSound("Hit"))
+                              ~~~~~~~~~        
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(119) : error BC30562: 'DrawAnimationSequence' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawAnimationSequence()
+        ~~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(124) : error BC30562: 'AddSplash' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+            AddSplash(row, column)
+            ~~~~~~~~~             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(127) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        Audio.PlaySoundEffect(GameSound("Miss"))
+                              ~~~~~~~~~         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(129) : error BC30562: 'DrawAnimationSequence' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawAnimationSequence()
+        ~~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(145) : error BC30562: 'Message' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+            Message = "You " & result.ToString()
+            ~~~~~~~                             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(147) : error BC30562: 'Message' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+            Message = "The AI " & result.ToString()
+            ~~~~~~~                                
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(153) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                Audio.PlaySoundEffect(GameSound("Sink"))
+                                      ~~~~~~~~~         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(157) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                Audio.PlaySoundEffect(GameSound("Sink"))
+                                      ~~~~~~~~~         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(159) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                While Audio.SoundEffectPlaying(GameSound("Sink"))
+                                               ~~~~~~~~~         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(165) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                    Audio.PlaySoundEffect(GameSound("Lose"))
+                                          ~~~~~~~~~         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(167) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                    Audio.PlaySoundEffect(GameSound("Winner"))
+                                          ~~~~~~~~~           
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(175) : error BC30562: 'GameSound' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                Audio.PlaySoundEffect(GameSound("Error"))
+                                      ~~~~~~~~~          
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(252) : error BC30562: 'HandleMainMenuInput' is ambiguous between declarations in Modules 'MenuController' and 'MenuController'.
+
+                HandleMainMenuInput()
+                ~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(254) : error BC30562: 'HandleGameMenuInput' is ambiguous between declarations in Modules 'MenuController' and 'MenuController'.
+
+                HandleGameMenuInput()
+                ~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(256) : error BC30562: 'HandleSetupMenuInput' is ambiguous between declarations in Modules 'MenuController' and 'MenuController'.
+
+                HandleSetupMenuInput()
+                ~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(258) : error BC30562: 'HandleDeploymentInput' is ambiguous between declarations in Modules 'DeploymentController' and 'DeploymentController'.
+
+                HandleDeploymentInput()
+                ~~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(260) : error BC30562: 'HandleDiscoveryInput' is ambiguous between declarations in Modules 'DiscoveryController' and 'DiscoveryController'.
+
+                HandleDiscoveryInput()
+                ~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(262) : error BC30562: 'HandleEndOfGameInput' is ambiguous between declarations in Modules 'EndingGameController' and 'EndingGameController'.
+
+                HandleEndOfGameInput()
+                ~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(264) : error BC30562: 'HandleHighScoreInput' is ambiguous between declarations in Modules 'HighScoreController' and 'HighScoreController'.
+
+                HandleHighScoreInput()
+                ~~~~~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(267) : error BC30562: 'UpdateAnimations' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        UpdateAnimations()
+        ~~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(277) : error BC30562: 'DrawBackground' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawBackground()
+        ~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(281) : error BC30562: 'DrawMainMenu' is ambiguous between declarations in Modules 'MenuController' and 'MenuController'.
+
+                DrawMainMenu()
+                ~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(283) : error BC30562: 'DrawGameMenu' is ambiguous between declarations in Modules 'MenuController' and 'MenuController'.
+
+                DrawGameMenu()
+                ~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(285) : error BC30562: 'DrawSettings' is ambiguous between declarations in Modules 'MenuController' and 'MenuController'.
+
+                DrawSettings()
+                ~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(287) : error BC30562: 'DrawDeployment' is ambiguous between declarations in Modules 'DeploymentController' and 'DeploymentController'.
+
+                DrawDeployment()
+                ~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(289) : error BC30562: 'DrawDiscovery' is ambiguous between declarations in Modules 'DiscoveryController' and 'DiscoveryController'.
+
+                DrawDiscovery()
+                ~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(291) : error BC30562: 'DrawEndOfGame' is ambiguous between declarations in Modules 'EndingGameController' and 'EndingGameController'.
+
+                DrawEndOfGame()
+                ~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(293) : error BC30562: 'DrawHighScores' is ambiguous between declarations in Modules 'HighScoreController' and 'HighScoreController'.
+
+                DrawHighScores()
+                ~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(296) : error BC30562: 'DrawAnimations' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        DrawAnimations()
+        ~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameController.vb(308) : error BC30562: 'Message' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        Message = ""
+        ~~~~~~~     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameLogic.vb(7) : error BC30562: 'LoadResources' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        LoadResources()
+        ~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameLogic.vb(9) : error BC30562: 'GameMusic' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        SwinGame.PlayMusic(GameMusic("Background"))
+                           ~~~~~~~~~               
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameLogic.vb(13) : error BC30562: 'HandleUserInput' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            HandleUserInput()
+            ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameLogic.vb(14) : error BC30562: 'DrawScreen' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            DrawScreen()
+            ~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameLogic.vb(15) : error BC30562: 'CurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        Loop Until SwinGame.WindowCloseRequested() = True Or CurrentState = GameState.Quitting
+                                                             ~~~~~~~~~~~~                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\GameLogic.vb(20) : error BC30562: 'FreeResources' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        FreeResources()
+        ~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(114) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        SwinGame.DrawText("   High Scores   ", Color.White, GameFont("Courier"), SCORES_LEFT, SCORES_HEADING)
+                                                            ~~~~~~~~                                         
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(125) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawText(" " & (i + 1) & ":   " & s.Name & "   " & s.Value, Color.White, GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP)
+                                                                                                  ~~~~~~~~                                                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(127) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawText(i + 1 & ":   " & s.Name & "   " & s.Value, Color.White, GameFont("Courier"), SCORES_LEFT, SCORES_TOP + i * SCORE_GAP)
+                                                                                          ~~~~~~~~                                                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(138) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            EndCurrentState()
+            ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(159) : error BC30562: 'AddNewState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            AddNewState(GameState.ViewingHighScores)
+            ~~~~~~~~~~~                             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(162) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+            x = SCORES_LEFT + SwinGame.TextWidth(GameFont("Courier"), "Name: ")
+                                                 ~~~~~~~~                      
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(164) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+            SwinGame.StartReadingText(Color.White, NAME_WIDTH, GameFont("Courier"), x, ENTRY_TOP)
+                                                               ~~~~~~~~                          
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(170) : error BC30562: 'DrawBackground' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+                DrawBackground()
+                ~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(172) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawText("Name: ", Color.White, GameFont("Courier"), SCORES_LEFT, ENTRY_TOP)
+                                                         ~~~~~~~~                                    
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\HighScoreController.vb(186) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            EndCurrentState()
+            ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(89) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            EndCurrentState()
+            ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(105) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                EndCurrentState()
+                ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(180) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+            SwinGame.DrawTextLines(_menuStructure(menu)(i), MENU_COLOR, Color.Black, GameFont("Menu"), FontAlignment.AlignCenter, toDraw)
+                                                                                     ~~~~~~~~                                            
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(208) : error BC30562: 'IsMouseInRectangle' is ambiguous between declarations in Modules 'UtilityFunctions' and 'UtilityFunctions'.
+
+        Return IsMouseInRectangle(btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT)
+               ~~~~~~~~~~~~~~~~~~                                              
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(234) : error BC30562: 'StartGame' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                StartGame()
+                ~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(236) : error BC30562: 'AddNewState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                AddNewState(GameState.AlteringSettings)
+                ~~~~~~~~~~~                            
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(238) : error BC30562: 'AddNewState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                AddNewState(GameState.ViewingHighScores)
+                ~~~~~~~~~~~                             
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(240) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                EndCurrentState()
+                ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(251) : error BC30562: 'SetDifficulty' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                SetDifficulty(AIOption.Hard)
+                ~~~~~~~~~~~~~               
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(253) : error BC30562: 'SetDifficulty' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                SetDifficulty(AIOption.Hard)
+                ~~~~~~~~~~~~~               
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(255) : error BC30562: 'SetDifficulty' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                SetDifficulty(AIOption.Hard)
+                ~~~~~~~~~~~~~               
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(258) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        EndCurrentState()
+        ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(268) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                EndCurrentState()
+                ~~~~~~~~~~~~~~~  
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(270) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                EndCurrentState() 'end game menu
+                ~~~~~~~~~~~~~~~                 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(271) : error BC30562: 'EndCurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                EndCurrentState() 'end game
+                ~~~~~~~~~~~~~~~            
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\MenuController.vb(273) : error BC30562: 'AddNewState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+                AddNewState(GameState.Quitting)
+                ~~~~~~~~~~~                    
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(164) : error BC30562: 'GameImage' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawBitmap(GameImage(shipName), colLeft, rowTop)
+                                    ~~~~~~~~~                            
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(192) : error BC30562: 'GameFont' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        SwinGame.DrawText(Message, MESSAGE_COLOR, GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP)
+                                                  ~~~~~~~~                                     
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(200) : error BC30562: 'CurrentState' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+        Select Case CurrentState
+                    ~~~~~~~~~~~~
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(202) : error BC30562: 'GameImage' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawBitmap(GameImage("Menu"), 0, 0)
+                                    ~~~~~~~~~               
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(204) : error BC30562: 'GameImage' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawBitmap(GameImage("Discovery"), 0, 0)
+                                    ~~~~~~~~~                    
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(206) : error BC30562: 'GameImage' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+                SwinGame.DrawBitmap(GameImage("Deploy"), 0, 0)
+                                    ~~~~~~~~~                 
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(228) : error BC30562: 'GameImage' is ambiguous between declarations in Modules 'GameResources' and 'GameResources'.
+
+        imgObj = GameImage(image)
+                 ~~~~~~~~~       
+C:\Users\dylan\Documents\uni\SWE20001\SwinDP1-Battleships\battleships\Vb.netCode\UtilityFunctions.vb(267) : error BC30562: 'DrawScreen' is ambiguous between declarations in Modules 'GameController' and 'GameController'.
+
+            DrawScreen()
+            ~~~~~~~~~~  
+vbc : error BC30041: Maximum number of errors has been exceeded.

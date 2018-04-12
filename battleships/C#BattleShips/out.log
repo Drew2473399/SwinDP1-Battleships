@@ -1,0 +1,12 @@
+Microsoft (R) Visual C# Compiler version 4.7.2556.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+src\Model\SeaGrid.cs(77,12): error CS1520: Method must have a return type
+src\Model\SeaGridAdapter.cs(41,1): error CS0116: A namespace cannot directly contain members such as fields or methods
+src\Model\SeaGridAdapter.cs(46,8): error CS1518: Expected class, delegate, enum, interface, or struct
+src\Model\SeaGridAdapter.cs(51,8): error CS1518: Expected class, delegate, enum, interface, or struct
+src\Model\SeaGridAdapter.cs(59,8): error CS1518: Expected class, delegate, enum, interface, or struct
+src\Model\SeaGridAdapter.cs(67,8): error CS1518: Expected class, delegate, enum, interface, or struct
