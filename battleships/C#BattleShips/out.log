@@ -4,9 +4,45 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
 This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
 
-src\Model\SeaGrid.cs(77,12): error CS1520: Method must have a return type
-src\Model\SeaGridAdapter.cs(41,1): error CS0116: A namespace cannot directly contain members such as fields or methods
-src\Model\SeaGridAdapter.cs(46,8): error CS1518: Expected class, delegate, enum, interface, or struct
-src\Model\SeaGridAdapter.cs(51,8): error CS1518: Expected class, delegate, enum, interface, or struct
-src\Model\SeaGridAdapter.cs(59,8): error CS1518: Expected class, delegate, enum, interface, or struct
-src\Model\SeaGridAdapter.cs(67,8): error CS1518: Expected class, delegate, enum, interface, or struct
+src\GameController.cs(15,13): error CS0246: The type or namespace name 'Stack' could not be found (are you missing a using directive or an assembly reference?)
+src\GameController.cs(101,52): error CS0246: The type or namespace name 'EventArgs' could not be found (are you missing a using directive or an assembly reference?)
+src\HighScoreController.cs(42,13): error CS0246: The type or namespace name 'List' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(16,17): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(18,17): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(25,16): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(31,16): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(37,25): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(37,43): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(84,13): error CS0246: The type or namespace name 'Stack' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(86,13): error CS0246: The type or namespace name 'List' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIHardPlayer.cs(234,36): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIMediumPlayer.cs(21,19): error CS0246: The type or namespace name 'Location' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIMediumPlayer.cs(21,13): error CS0246: The type or namespace name 'Stack' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\AIPlayer.cs(12,21): warning CS0660: 'AIPlayer.Location' defines operator == or operator != but does not override Object.Equals(object o)
+src\Model\AIPlayer.cs(12,21): warning CS0661: 'AIPlayer.Location' defines operator == or operator != but does not override Object.GetHashCode()
+src\Model\ISeaGrid.cs(7,9): error CS0548: 'ISeaGrid.Width': property or indexer must have at least one accessor
+src\Model\Player.cs(7,22): error CS0246: The type or namespace name 'Random' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\Player.cs(9,13): error CS0246: The type or namespace name 'Dictionary' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\Player.cs(129,12): error CS0246: The type or namespace name 'IEnumerator' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\Player.cs(142,12): error CS0246: The type or namespace name 'IEnumerator' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\SeaGrid.cs(15,13): error CS0246: The type or namespace name 'Dictionary' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\SeaGrid.cs(22,18): error CS0246: The type or namespace name 'EventHandler' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\SeaGrid.cs(77,21): error CS0246: The type or namespace name 'Dictionary' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\SeaGridAdapter.cs(27,48): error CS0246: The type or namespace name 'EventArgs' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\SeaGridAdapter.cs(38,21): error CS0548: 'SeaGridAdapter.this[int, int]': property or indexer must have at least one accessor
+src\Model\SeaGridAdapter.cs(48,18): error CS0246: The type or namespace name 'EventHandler' could not be found (are you missing a using directive or an assembly reference?)
+src\Model\Ship.cs(17,13): error CS0246: The type or namespace name 'List' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(25,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(27,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(29,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(31,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(33,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(35,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(37,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(39,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(41,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(43,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(45,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(47,13): error CS0246: The type or namespace name 'Color' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(289,18): error CS0246: The type or namespace name 'Sprite' could not be found (are you missing a using directive or an assembly reference?)
+src\UtilityFunctions.cs(289,13): error CS0246: The type or namespace name 'List' could not be found (are you missing a using directive or an assembly reference?)

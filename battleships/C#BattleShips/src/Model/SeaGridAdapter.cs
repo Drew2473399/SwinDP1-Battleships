@@ -14,8 +14,9 @@ public class SeaGridAdapter : ISeaGrid
     public SeaGridAdapter(SeaGrid grid)
     {
         _MyGrid = grid;
-        _MyGrid.Changed += new EventHandler(// TODO: Warning!!!! NULL EXPRESSION DETECTED...
-        .);
+        _MyGrid.Changed += new EventHandler(
+        // TODO: Warning!!!! NULL EXPRESSION DETECTED...
+        );
     }
 
     // '' <summary>
@@ -34,37 +35,35 @@ public class SeaGridAdapter : ISeaGrid
     // '' <param name="x">tile x coordinate</param>
     // '' <param name="y">tile y coordinate</param>
     // '' <returns>a tile, either what it actually is, or if it was a ship then return a sea tile</returns>
-    public TileView this[int x, int y]
-    {
+    public TileView this[int x, int y] {
     }
-}
-EndPropertyImplementsISeaGrid.Changed;
 
-// '' <summary>
-// '' Indicates that the grid has been changed
-// '' </summary>
-public event EventHandler Changed;
+    //EndPropertyImplementsISeaGrid.Changed;
+    // commenting ^ out fixes dunno if we need it
 
-// '' <summary>
-// '' Get the width of a tile
-// '' </summary>
-public int Width
-{
-    get
-    {
-        return _MyGrid.Width;
+
+    // '' <summary>
+    // '' Indicates that the grid has been changed
+    // '' </summary>
+    public event EventHandler Changed;
+
+    // '' <summary>
+    // '' Get the width of a tile
+    // '' </summary>
+    public int Width {
+        get {
+            return _MyGrid.Width;
+        }
     }
-}
 
-public int Height
-{
-    get
-    {
-        return _MyGrid.Height;
+    public int Height {
+        get {
+            return _MyGrid.Height;
+        }
     }
-}
 
-public AttackResult HitTile(int row, int col)
-{
-    return _MyGrid.HitTile(row, col);
+    public AttackResult HitTile(int row, int col)
+    {
+        return _MyGrid.HitTile(row, col);
+    }
 }

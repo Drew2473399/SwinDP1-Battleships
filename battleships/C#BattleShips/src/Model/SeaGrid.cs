@@ -74,7 +74,7 @@ public class SeaGrid : ISeaGrid {
         }
     }
 
-    public New(Dictionary<ShipName, Ship> ships)
+    public void New(Dictionary<ShipName, Ship> ships)
     {
         //fill array with empty Tiles
         int i = 0;
