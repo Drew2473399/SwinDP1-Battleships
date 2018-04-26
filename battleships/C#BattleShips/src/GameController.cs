@@ -151,7 +151,7 @@ public static class GameController
 	/// </remarks>
 	private static void AttackCompleted(object sender, AttackResult result)
 	{
-		bool isHuman = false;
+        bool isHuman;
 		isHuman = object.ReferenceEquals(_theGame.Player, HumanPlayer);
 
 		if (isHuman) {
@@ -234,7 +234,7 @@ public static class GameController
 	/// </remarks>
 	private static void AIAttack()
 	{
-		AttackResult result = default(AttackResult);
+        AttackResult result = default(AttackResult);
 		result = _theGame.Player.Attack();
 		CheckAttackResult(result);
 	}
@@ -254,6 +254,10 @@ public static class GameController
 				if (object.ReferenceEquals(_theGame.Player, ComputerPlayer))
 					AIAttack();
 				break;
+            case ResultOfAttack.ShotAlready:
+                if (_theGame.Player == ComputerPlayer)
+                    GameController.AIAttack();
+                break;
 			case ResultOfAttack.GameOver:
 				SwitchState(GameState.EndingGame);
 				break;

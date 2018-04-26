@@ -18,6 +18,7 @@ public class Player : IEnumerable<Ship>
 	private ISeaGrid _enemyGrid;
 
 	protected BattleShipsGame _game;
+
 	private int _shots;
 	private int _hits;
 
@@ -181,19 +182,24 @@ public class Player : IEnumerable<Ship>
 	/// <returns>the result of the attack</returns>
 	internal AttackResult Shoot(int row, int col)
 	{
-		_shots += 1;
-		AttackResult result = default(AttackResult);
+        
+
+        AttackResult result = default(AttackResult);
 		result = EnemyGrid.HitTile(row, col);
 
 		switch (result.Value) {
+            
 			case ResultOfAttack.Destroyed:
 			case ResultOfAttack.Hit:
-				_hits += 1;
+                _shots += 1;
+                _hits += 1;
 				break;
 			case ResultOfAttack.Miss:
-				_misses += 1;
+                _shots += 1;
+                _misses += 1;
 				break;
-		}
+
+        }
 
 		return result;
 	}
