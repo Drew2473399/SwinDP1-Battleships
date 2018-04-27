@@ -1,0 +1,135 @@
+Stacktrace:
+
+  at <unknown> <0xffffffff>
+  at (wrapper managed-to-native) SwinGameSDK.sgLibrary.DLL_sg_Audio_FreeSoundEffect (intptr&) <0x00012>
+  at SwinGameSDK.sgLibrary.sg_Audio_FreeSoundEffect (intptr&) [0x00003] in /Users/acain/working/SwinGame/Generated/CSharp/Code/SGSDK.cs:1719
+  at SwinGameSDK.Audio.FreeSoundEffect (SwinGameSDK.SoundEffect) [0x00018] in /Users/acain/working/SwinGame/Generated/CSharp/Code/Audio.cs:118
+  at GameResources.FreeSounds () [0x00021] in <07c13084a73f47f5a6f89fbca7511fc5>:0
+  at GameResources.FreeResources () [0x00010] in <07c13084a73f47f5a6f89fbca7511fc5>:0
+  at GameLogic.Main () [0x00051] in <07c13084a73f47f5a6f89fbca7511fc5>:0
+  at (wrapper runtime-invoke) <Module>.runtime_invoke_int (object,intptr,intptr,intptr) [0x00053] in <07c13084a73f47f5a6f89fbca7511fc5>:0
+
+Native stacktrace:
+
+
+Debug info from gdb:
+
+(lldb) command source -s 0 '/tmp/mono-gdb-commands.D5n22z'
+Executing commands in '/tmp/mono-gdb-commands.D5n22z'.
+(lldb) process attach --pid 2660
+Process 2660 stopped
+* thread #1, name = 'tid_403', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+    frame #0: 0xa1669c4a libsystem_kernel.dylib`__wait4 + 10
+libsystem_kernel.dylib`__wait4:
+->  0xa1669c4a <+10>: jae    0xa1669c5a                ; <+26>
+    0xa1669c4c <+12>: calll  0xa1669c51                ; <+17>
+    0xa1669c51 <+17>: popl   %edx
+    0xa1669c52 <+18>: movl   0x58d63d7(%edx), %edx
+Target 0: (MyGameMac) stopped.
+
+Executable module set to "/Users/cwijaya/Downloads/BattleShipsCS_2018_Mac/bin/Debug-Mac/MyGameMac.app/Contents/MacOS/MyGameMac".
+Architecture set to: i386-apple-macosx.
+(lldb) thread list
+Process 2660 stopped
+* thread #1: tid = 0x6aab, 0xa1669c4a libsystem_kernel.dylib`__wait4 + 10, name = 'tid_403', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  thread #2: tid = 0x6aac, 0xa166930e libsystem_kernel.dylib`__psynch_cvwait + 10, name = 'SGen worker'
+  thread #3: tid = 0x6aad, 0xa166930e libsystem_kernel.dylib`__psynch_cvwait + 10, name = 'SGen worker'
+  thread #4: tid = 0x6aaf, 0xa166195a libsystem_kernel.dylib`semaphore_wait_trap + 10, name = 'Finalizer'
+  thread #5: tid = 0x6ab0, 0xa1669cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #6: tid = 0x6ab1, 0xa1669cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #7: tid = 0x6ab2, 0xa1669cba libsystem_kernel.dylib`__workq_kernreturn + 10
+  thread #8: tid = 0x6ab3, 0xa166956a libsystem_kernel.dylib`__recvfrom + 10, name = 'Debugger agent'
+  thread #9: tid = 0x6ac2, 0xa166930e libsystem_kernel.dylib`__psynch_cvwait + 10, name = 'SDLTimer'
+  thread #10: tid = 0x6adf, 0xa166191e libsystem_kernel.dylib`mach_msg_trap + 10, name = 'com.apple.audio.IOThread.client'
+(lldb) thread backtrace all
+* thread #1, name = 'tid_403', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  * frame #0: 0xa1669c4a libsystem_kernel.dylib`__wait4 + 10
+    frame #1: 0xa15e82ef libsystem_c.dylib`waitpid$UNIX2003 + 32
+    frame #2: 0x020bc80c libmono-2.0.dylib`mono_handle_native_crash(signal=<unavailable>, ctx=0x001cbfe0, info=0x001cbfa0) at mini-exceptions.c:2720 [opt]
+    frame #3: 0x02119c72 libmono-2.0.dylib`mono_arch_handle_altstack_exception(sigctx=<unavailable>, siginfo=<unavailable>, fault_addr=<unavailable>, stack_ovf=<unavailable>) at exceptions-x86.c:1114 [opt]
+    frame #4: 0x0200f772 libmono-2.0.dylib`mono_sigsegv_signal_handler(_dummy=11, _info=0x001cbfa0, context=0x001cbfe0) at mini-runtime.c:3118 [opt]
+  thread #2, name = 'SGen worker'
+    frame #0: 0xa166930e libsystem_kernel.dylib`__psynch_cvwait + 10
+    frame #1: 0xa174deb0 libsystem_pthread.dylib`_pthread_cond_wait + 647
+    frame #2: 0xa174f844 libsystem_pthread.dylib`pthread_cond_wait$UNIX2003 + 51
+    frame #3: 0x02279a72 libmono-2.0.dylib`thread_func [inlined] mono_os_cond_wait(cond=0x02383660, mutex=<unavailable>) at mono-os-mutex.h:173 [opt]
+    frame #4: 0x02279a66 libmono-2.0.dylib`thread_func(thread_data=<unavailable>) at sgen-thread-pool.c:108 [opt]
+    frame #5: 0xa174d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #6: 0xa174cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #7: 0xa174c84a libsystem_pthread.dylib`thread_start + 34
+  thread #3, name = 'SGen worker'
+    frame #0: 0xa166930e libsystem_kernel.dylib`__psynch_cvwait + 10
+    frame #1: 0xa174deb0 libsystem_pthread.dylib`_pthread_cond_wait + 647
+    frame #2: 0xa174f844 libsystem_pthread.dylib`pthread_cond_wait$UNIX2003 + 51
+    frame #3: 0x02279a54 libmono-2.0.dylib`thread_func [inlined] mono_os_cond_wait(cond=0x023827d4, mutex=<unavailable>) at mono-os-mutex.h:173 [opt]
+    frame #4: 0x02279a48 libmono-2.0.dylib`thread_func(thread_data=0x00085004) at sgen-thread-pool.c:90 [opt]
+    frame #5: 0xa174d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #6: 0xa174cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #7: 0xa174c84a libsystem_pthread.dylib`thread_start + 34
+  thread #4, name = 'Finalizer'
+    frame #0: 0xa166195a libsystem_kernel.dylib`semaphore_wait_trap + 10
+    frame #1: 0x021fdec3 libmono-2.0.dylib`finalizer_thread [inlined] mono_os_sem_wait(flags=MONO_SEM_FLAGS_ALERTABLE) at mono-os-semaphore.h:91 [opt]
+    frame #2: 0x021fdeb5 libmono-2.0.dylib`finalizer_thread at mono-coop-semaphore.h:43 [opt]
+    frame #3: 0x021fdea4 libmono-2.0.dylib`finalizer_thread(unused=0x00000000) at gc.c:864 [opt]
+    frame #4: 0x021d1375 libmono-2.0.dylib`start_wrapper [inlined] start_wrapper_internal at threads.c:829 [opt]
+    frame #5: 0x021d12e4 libmono-2.0.dylib`start_wrapper(data=<unavailable>) at threads.c:891 [opt]
+    frame #6: 0xa174d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #7: 0xa174cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #8: 0xa174c84a libsystem_pthread.dylib`thread_start + 34
+  thread #5
+    frame #0: 0xa1669cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa174cd06 libsystem_pthread.dylib`_pthread_wqthread + 1210
+    frame #2: 0xa174c826 libsystem_pthread.dylib`start_wqthread + 34
+  thread #6
+    frame #0: 0xa1669cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa174cb95 libsystem_pthread.dylib`_pthread_wqthread + 841
+    frame #2: 0xa174c826 libsystem_pthread.dylib`start_wqthread + 34
+  thread #7
+    frame #0: 0xa1669cba libsystem_kernel.dylib`__workq_kernreturn + 10
+    frame #1: 0xa174cb95 libsystem_pthread.dylib`_pthread_wqthread + 841
+    frame #2: 0xa174c826 libsystem_pthread.dylib`start_wqthread + 34
+  thread #8, name = 'Debugger agent'
+    frame #0: 0xa166956a libsystem_kernel.dylib`__recvfrom + 10
+    frame #1: 0xa15e84c6 libsystem_c.dylib`recv$UNIX2003 + 30
+    frame #2: 0x020f5f39 libmono-2.0.dylib`socket_transport_recv(buf=<unavailable>, len=11) at debugger-agent.c:1148 [opt]
+    frame #3: 0x020e18d4 libmono-2.0.dylib`debugger_thread [inlined] transport_recv(len=11) at debugger-agent.c:1554 [opt]
+    frame #4: 0x020e18c2 libmono-2.0.dylib`debugger_thread(arg=0x00000000) at debugger-agent.c:10338 [opt]
+    frame #5: 0x021d1375 libmono-2.0.dylib`start_wrapper [inlined] start_wrapper_internal at threads.c:829 [opt]
+    frame #6: 0x021d12e4 libmono-2.0.dylib`start_wrapper(data=<unavailable>) at threads.c:891 [opt]
+    frame #7: 0xa174d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #8: 0xa174cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #9: 0xa174c84a libsystem_pthread.dylib`thread_start + 34
+  thread #9, name = 'SDLTimer'
+    frame #0: 0xa166930e libsystem_kernel.dylib`__psynch_cvwait + 10
+    frame #1: 0xa174deb0 libsystem_pthread.dylib`_pthread_cond_wait + 647
+    frame #2: 0xa1751acd libsystem_pthread.dylib`pthread_cond_timedwait$UNIX2003 + 52
+    frame #3: 0x04a0c606 libsgsdk.dylib`___lldb_unnamed_symbol4773$$libsgsdk.dylib + 230
+    frame #4: 0x04a0ccea libsgsdk.dylib`___lldb_unnamed_symbol4783$$libsgsdk.dylib + 218
+    frame #5: 0x04a0e472 libsgsdk.dylib`___lldb_unnamed_symbol4809$$libsgsdk.dylib + 562
+    frame #6: 0x04a0da7e libsgsdk.dylib`___lldb_unnamed_symbol4800$$libsgsdk.dylib + 110
+    frame #7: 0x04a0cfc7 libsgsdk.dylib`___lldb_unnamed_symbol4788$$libsgsdk.dylib + 23
+    frame #8: 0xa174d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #9: 0xa174cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #10: 0xa174c84a libsystem_pthread.dylib`thread_start + 34
+  thread #10, name = 'com.apple.audio.IOThread.client'
+    frame #0: 0xa166191e libsystem_kernel.dylib`mach_msg_trap + 10
+    frame #1: 0xa1660e93 libsystem_kernel.dylib`mach_msg + 51
+    frame #2: 0x93e8351c CoreAudio`HALB_MachPort::SendMessageWithReply(unsigned int, unsigned int, unsigned long, unsigned long, mach_msg_header_t*, bool, unsigned int) + 130
+    frame #3: 0x93e5dc7d CoreAudio`HALB_MachPort::SendSimpleMessageWithSimpleReply(unsigned int, unsigned int, int, int&, bool, unsigned int) + 49
+    frame #4: 0x93e5a6d8 CoreAudio`HALC_ProxyIOContext::IOWorkLoop() + 1730
+    frame #5: 0x93e59dc4 CoreAudio`HALC_ProxyIOContext::IOThreadEntry(void*) + 236
+    frame #6: 0x93e8a813 CoreAudio`___ZN19HALC_ProxyIOContextC2Emj_block_invoke + 20
+    frame #7: 0x93e59c97 CoreAudio`HALB_IOThread::Entry(void*) + 71
+    frame #8: 0xa174d047 libsystem_pthread.dylib`_pthread_body + 184
+    frame #9: 0xa174cf8f libsystem_pthread.dylib`_pthread_start + 243
+    frame #10: 0xa174c84a libsystem_pthread.dylib`thread_start + 34
+(lldb) detach
+
+=================================================================
+Got a SIGSEGV while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+Process 2660 detached
+(lldb) quit
