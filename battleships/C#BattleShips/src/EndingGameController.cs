@@ -39,7 +39,7 @@ static class EndingGameController
 			whatShouldIPrint = "-- WINNER --";
 		}
         SwinGame.DrawText (whatShouldIPrint, Color.White, Color.Transparent,GameResources.GameFont ("ArialLarge"),FontAlignment.AlignCenter, toDraw);
-        HighScoreController.SaveScores();
+        
 	}
 
 	/// <summary>
