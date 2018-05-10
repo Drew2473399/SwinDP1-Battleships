@@ -53,7 +53,8 @@ static class EndingGameController
 	{
         if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.ReturnKey) || SwinGame.KeyTyped(KeyCode.EscapeKey)) {
 			HighScoreController.ReadHighScore(GameController.HumanPlayer.Score);
-			GameController.EndCurrentState();
+            HighScoreController.SaveScores();
+            GameController.EndCurrentState();
 		}
 	}
 

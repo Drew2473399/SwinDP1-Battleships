@@ -152,6 +152,7 @@ static class HighScoreController
 	public static void HandleHighScoreInput()
 	{
         if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.EscapeKey) || SwinGame.KeyTyped(KeyCode.ReturnKey)) {
+            SaveScores();
 			GameController.EndCurrentState();
 		}
 	}
@@ -201,8 +202,9 @@ static class HighScoreController
 			_Scores.RemoveAt(_Scores.Count - 1);
 			_Scores.Add(s);
 			_Scores.Sort();
+            SaveScores();
 
-			GameController.EndCurrentState();
+            GameController.EndCurrentState();
 		}
 	}
 }
